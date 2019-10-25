@@ -1,0 +1,28 @@
+DC:
+  BASE_PATH: C:/Users/CRY/Desktop/毕业设计/testdoc
+  DATE_FORMAT: EEE, d MMM yyyy HH:mm:ss z
+spring:
+  application:
+    name: FileService
+  datasource:
+    username: root
+    password: admin
+    url: jdbc:mysql://localhost:3306/data_clean
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  redis:
+    host: 192.168.3.234
+    password: admin
+
+eureka:
+  client:
+    service-url:
+#      defaultZone: http://server:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8080
+
+

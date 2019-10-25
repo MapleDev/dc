@@ -1,0 +1,21 @@
+server:
+  port: 80
+spring:
+  application:
+    name: Zuul
+  thymeleaf:
+    cache: false
+
+
+eureka:
+  client:
+    service-url:
+#      defaultZone: http://server:8761/eureka
+      defaultZone: http://localhost:8761/eureka
+management:
+  security:
+    enabled: false
+
+
+
+
